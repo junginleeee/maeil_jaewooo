@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body {
@@ -48,19 +49,19 @@ body {
 
 .page2 .grid-container {
     grid-template-columns: repeat(26, 1fr); /* 한 줄에 26개 */
-    gap: 50px;
+    gap: 10px;
     grid-auto-rows: 1fr;
 }
 
 .page3 .grid-container {
     grid-template-columns: repeat(52, 1fr); /* 한 줄에 52개 */
-    gap: 40px;
+    gap: 10px;
     grid-auto-rows: 1fr;
 }
 
 .page4 .grid-container {
     grid-template-columns: repeat(104, 1fr); /* 한 줄에 52개 */
-    gap: 30px;
+    gap: 10px;
     grid-auto-rows: 1fr;
 }
 
@@ -101,10 +102,10 @@ body {
 /* 그라디언트 애니메이션 */
 @keyframes gradientMove {
     0% {
-        background-position: 50% 0%; /* 상단 */
+        background-position: 100% 0%; /* 상단 */
     }
     100% {
-        background-position: 50% 100%; /* 하단 */
+        background-position: 0% 100%; /* 하단 */
     }
 }
 
